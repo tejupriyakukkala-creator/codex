@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  medtwin-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medtwin-ai-app
+    ports:
+      - "8080:80"
+    restart: always
